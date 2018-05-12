@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;    font-family: "微软雅黑", "Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;vertical-align: top;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+i{display: block;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+input{outline: 0;}
+body{background:#fff;position: relative;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;   padding-bottom: 1.14rem;padding-top: 0; }
+
+.tou_wrap{position: relative;height: 2.6rem;}
+.bg{width: 100%;height: 1.4rem;}
+img.touxiang{position: absolute;width: 1.5rem;height: 1.5rem;top: .44rem;left: 2.45rem;border-radius:1000px ; box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.75);}
+.name{font-size: .24rem;color: #333;text-align: center;margin-top: .61rem;}
+
+
+
+
+/*我的*/
+.my_list{padding-bottom: .2rem;}
+.my_list{font-size: .21rem;color: #333;}
+.my_list li{border-bottom: 2px solid #eeeeee;line-height: .98rem;font-size: .24rem;}
+
+.my_list li:last-child{border-bottom: 2px solid #eeeeee;}
+.my_list .li_img{padding: 0 .16rem 0 .18rem;width: .31rem;height: .3rem;vertical-align: middle;}
+.my_list li:first-child .li_img{position: relative;top: -.02rem;}
+.my_list .turn{padding-top: .36rem;float: right;padding-right: .18rem;width: .1rem;height: .2rem;}
+.my_list a{color: inherit;display: block;}
+
+
+/*foot*/
+.foot{height: .98rem;border-top: 2px solid #a7c6b1;background: #005f1e;width: 6.40rem;position: fixed;bottom: 0;left: 0;z-index: 100;}
+.foot_title{width:1.6rem;height: .87rem;text-align: center;float: left;}
+.foot_title a{color: #fff;display: block;position: relative;}
+.foot_img{    padding-top: 0.12rem;
+    width: .42rem;
+    height: .4rem;
+    display: block;
+    margin: 0 auto;}
+
+.foot .title{font-size: .24rem;padding-top: 0.06rem;}
+.foot .active{color: #81e09f;}
+img{display: inline-block;}
+

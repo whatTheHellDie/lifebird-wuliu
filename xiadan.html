@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/yuyue.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+	<div class="head">一键预约
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<div class="wrap">
+			<div class="choose">
+				<img src="img/location.png" class="locate" alt="" />
+				<span>选择服务网点</span>
+				<img src="img/down.png" class="down" alt="" class="down " />
+			</div>
+			<div class="zone">
+				<ul class="clearfix">
+					<li>东葛片区</li>
+					<li>地王/医科大</li>
+					<li>地王/北湖</li>
+					<li>高新片区</li>
+					<li>凤岭南片区</li>
+					<li>普罗旺斯</li>
+				</ul>
+			</div>
+			<!--寄件人已寄过快递时-->
+			<div class="information">
+				<p>寄件人信息<a href="#" class="mo">默认></a></p>
+				<div class="name"><img src="img/l1.png"/>李小姐（15977131548）</div>
+				<div class="name"><img src="img/l2.png"/>广西南宁市青秀区合作路昌泰大厦14层（广西同城小
+鸟网络有限公司）</div>
+<div class="space_line"></div>
+				<div class="edit">
+					<a href="#"><img src="img/edit.png" alt="" />编辑</a>
+					<a href="#" class="create">新建寄件人信息</a>
+				</div>
+			</div>
+			<!--寄件人已寄过快递时结束-->
+			<!--寄件人未寄过快递时-->
+			<div class="information">
+				<p>寄件人信息 <span><b>*</b>为必填信息</span></p>
+				<!--label标签的for里面放对应input的id-->
+				<div class="add_info"><label for="">姓名</label><input type="text" placeholder="请填写寄件人姓名"  /></div>
+				<div class="add_info"><label for="">手机<span>*</span></label><input type="text" placeholder="请填写11位手机号码"  /></div>
+				<div class="add_info"><label for="">固定电话</label><input type="text" placeholder="请填写寄件人固定电话"  /></div>
+				<div class="add_info"><label for="">地址<span>*</span></label><input type="text" placeholder="请填写寄件人公司地址"  /></div>
+				<div class="edit" style="border-top: none;">
+					<img src="img/gou.png" class="gou" alt="" />设为默认联系人信息
+				</div>
+			</div>
+			<!--寄件人未寄过快递时结束-->
+				<!--其它信息开始-->
+				<div class="information">
+				<p>其他信息 <span><b>*</b>为必填信息</span></p>
+				<!--label标签的for里面放对应input的id-->
+				<div class="add_info"><label for="">重量</label><div class="weight" >
+					
+				<select name="">
+					<option value="">0~2kg</option>
+				</select>
+				</div></div>
+				<div class="add_info"><label for="">件数<span>*</span></label><input type="number" placeholder="请输入货物件数"  /></div>
+				<div class="add_info"><label for="">备注</label><textarea name="" rows="" cols=""placeholder="备注"></textarea></div>
+				<div class="add_info"><label for="">预约时间<span>*</span></label><input type="date" style="width: 1.7rem;" placeholder="上门取件时间"  /><input type="time" style="width: 1.5rem;    margin: .18rem .61rem 0 .1rem;" placeholder="上门取件时间"  /></div>
+				<div class="add_info"><label for="">内件详情<span>*</span></label><input type="text" placeholder="邮寄的货物、物品名称"  />
+				</div>
+			</div>
+				<!--其它信息结束-->
+				<div class="yuyue_button">一键预约</div>
+				</div>	
+				
+				<script type="text/javascript">
+		$(function(){
+			//区域点击展开收缩
+			$(".zone li").click(function(){
+				$(".choose span").html($(this).text())
+				$(".down").addClass("active")
+				$(".zone").slideUp();
+			})
+			$(".choose").click(function(){
+				$(".zone").slideDown();
+				$(".down").removeClass("active")
+			})
+			//默认联系人图标 
+			$(".gou").click(function(){
+				var cc="img/gou.png";
+				var cca="img/gou_a.png"
+				if($(this).attr("src")==cc){
+					$(this).attr("src",cca);
+				}else{
+						$(this).attr("src",cc);
+				}
+			})
+		})
+	</script>
+	</body>
+	
+</html>

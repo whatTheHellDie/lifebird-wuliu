@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;    font-family: "微软雅黑", "Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);color: inherit;}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;vertical-align: top;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+i{display: block;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+input{outline: 0;}
+body{background:#fff;position: relative;}
+.wrap{color: #333;width:100%;min-width:320px;margin:0px auto 0px;   padding-bottom: .87rem;padding-top: .89rem; }
+
+.return_img{width: .2rem;height: .4rem;position: absolute;top: .27rem;left: .19rem;}
+.head{color: #333;text-align: center;
+width: 100%;height:.86rem ;line-height: .86rem;
+font-size:.28rem;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 4px solid #559469;
+}
+
+
+.wuliu{font-size: .28rem;color: #333;padding: 0 .2rem;background: #f2fff2;padding-top: .12rem;padding-bottom: .1rem;}
+.wuliu div{font-size: .24rem;padding-top: .14rem;}
+.wuliu img{width: .35rem;height: .35rem;display: inline-block;vertical-align: -25%;padding-right: .1rem;}
+.wuliu .huo{float: right;}
+.wuliu .huo span{color: #005f1e;}
+
+/*状态*/
+.state{font-size: .24rem;color: #808080;}
+.state  li{position: relative;text-align: center;width: 1.28rem;float: left;}
+.state li b{font-weight: normal;}
+.state  li .down{width: .08rem;height: .07rem;position: absolute;left: .6rem;top: .34rem;}
+.state li .yuan{width: .14rem;height: .14rem;border-radius: 1000px;background: #808080;display: inline-block;text-align: center;}
+.state li span{display: inline-block;background: #808080;width: .8rem;height: .03rem;position: absolute;top: .48rem;left: .84rem;}
+.state li.active b{color: #fff;background: #005f1e;padding: .02rem .16rem;border-radius:1000px ;}
+.state li.active .yuan{background: #005f1e;}
+
+/*派件*/
+.paijian{font-size: .24rem;color: #333;padding-top: .4rem;}
+.paijian .left{float: left;width: 1.55rem;text-align: center;padding-top: .04rem;}
+.paijian .left .date{font-size: .2rem;color: #999;}
+.paijian .left .vertical{width: 1px;height: 100px;background: #ccc;display: inline-block;margin-top: .18rem;}
+.paijian  .right{float: right;width: 4.7rem;font-size: .24rem;}
+.paijian  .right span{color: #005f1e;}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/my_dingdan.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+	<div class="head">我的订单
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<div class="wrap">
+	<div class="choose_list">
+		<ul>
+			<li class="active"><a href="#">预约中</a></li>
+			<li><a href="#">运送中</a></li>
+			<li><a href="#">已签收</a></li>
+			<li><a href="#">已取消</a></li>
+		</ul>
+	</div>
+	
+	<div class="list">
+		<ul class="clearfix"> 
+			<li class="clearfix">
+			<a href="dingdan_detail.html">
+				<div class="danhao"><span>订单编号：3901743700689</span><span class="state">已签收</span></div>
+				<img src="img/green_line.png" class="green_line" alt="" />
+				<div class="name"><img src="img/l1.png"/>李小姐（15977131548）</div>
+				<div class="name"><img src="img/l2.png"/>广西南宁市青秀区合作路昌泰大厦14层（广西同城小
+鸟网络有限公司）</div>
+				<div class="name"><img src="img/l3.png"/>创维（Skyworth）42X5 42英寸6核智能酷开网络平板</div>
+				<img src="img/green_line.png" class="green_line" style="margin-top: .2rem;" alt="" />
+				<div class="lan">揽件：2016-12-28    16：00</div>
+				</a>
+				<a href="wuliu_detail.html" class="see">查看物流</a>
+			</li>
+			<li class="clearfix">
+			<a href="dingdan_detail.html">
+				<div class="danhao"><span>订单编号：3901743700689</span><span class="state">已签收</span></div>
+				<img src="img/green_line.png" class="green_line" alt="" />
+				<div class="name"><img src="img/l1.png"/>李小姐（15977131548）</div>
+				<div class="name"><img src="img/l2.png"/>广西南宁市青秀区合作路昌泰大厦14层（广西同城小
+鸟网络有限公司）</div>
+				<div class="name"><img src="img/l3.png"/>创维（Skyworth）42X5 42英寸6核智能酷开网络平板</div>
+				<img src="img/green_line.png" class="green_line" style="margin-top: .2rem;" alt="" />
+				<div class="lan">揽件：2016-12-28    16：00</div>
+				</a>
+				<a href="wuliu_detail.html" class="see">查看物流</a>
+			</li>
+			<li class="clearfix">
+			<a href="dingdan_detail.html">
+				<div class="danhao"><span>订单编号：3901743700689</span><span class="state">已签收</span></div>
+				<img src="img/green_line.png" class="green_line" alt="" />
+				<div class="name"><img src="img/l1.png"/>李小姐（15977131548）</div>
+				<div class="name"><img src="img/l2.png"/>广西南宁市青秀区合作路昌泰大厦14层（广西同城小
+鸟网络有限公司）</div>
+				<div class="name"><img src="img/l3.png"/>创维（Skyworth）42X5 42英寸6核智能酷开网络平板</div>
+				<img src="img/green_line.png" class="green_line" style="margin-top: .2rem;" alt="" />
+				<div class="lan">揽件：2016-12-28    16：00</div>
+				</a>
+				<a href="wuliu_detail.html" class="see">查看物流</a>
+			</li>
+			<li class="clearfix">
+			<a href="dingdan_detail.html">
+				<div class="danhao"><span>订单编号：3901743700689</span><span class="state">已签收</span></div>
+				<img src="img/green_line.png" class="green_line" alt="" />
+				<div class="name"><img src="img/l1.png"/>李小姐（15977131548）</div>
+				<div class="name"><img src="img/l2.png"/>广西南宁市青秀区合作路昌泰大厦14层（广西同城小
+鸟网络有限公司）</div>
+				<div class="name"><img src="img/l3.png"/>创维（Skyworth）42X5 42英寸6核智能酷开网络平板</div>
+				<img src="img/green_line.png" class="green_line" style="margin-top: .2rem;" alt="" />
+				<div class="lan">揽件：2016-12-28    16：00</div>
+				</a>
+				<a href="wuliu_detail.html" class="see">查看物流</a>
+			</li>
+		</ul>
+	</div>
+			
+				</div>	
+				<script type="text/javascript">
+		$(function(){
+			$(".choose_list li").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+		})
+	</script>
+	</body>
+	
+</html>

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;    font-family: "微软雅黑", "Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);color: inherit;}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;vertical-align: top;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+i{display: block;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+input{outline: 0;}
+body{background:#f5f5f5;position: relative;}
+.wrap{color: #333;width:100%;min-width:320px;margin:0px auto 0px;   padding-bottom: .87rem;padding-top: .89rem; }
+
+.return_img{width: .2rem;height: .4rem;position: absolute;top: .27rem;left: .19rem;}
+.head{color: #333;text-align: center;
+width: 100%;height:.86rem ;line-height: .86rem;
+font-size:.28rem;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 4px solid #559469;
+}
+/*订单*/
+.top{height: 4rem;background: #81e09f;box-sizing: border-box;padding-top: .2rem;}
+.dingdan{width: 6rem;height: 3.6rem;background: #fff;margin: 0 auto 0;border-radius:.1rem ;}
+.dingdan p{width: 5.6rem;font-size: .24rem;color: #333;padding-top: .26rem;text-align: center;margin: 0 auto .36rem;}
+.dingdan p span{width: 1.72rem;height: 1px;background: #ccc;display: inline-block;vertical-align: 26%;margin: 0 .2rem;}
+.dingdan .number{font-size: .32rem;width: 5.4rem;height: 1.5rem;line-height: .6rem;background: #e6e6e6;padding-left: .19rem;box-sizing: border-box;margin: 0 auto;}
+.dingdan .number label{    display: inline-block;vertical-align: top;outline: none;border: none;}
+.dingdan .number textarea{margin-left: .26rem;height: 1.3rem;
+vertical-align: 9%;border: none;font-size: .24rem;width: 3.86rem;
+background: transparent;    margin-top: .15rem;color: #333;}
+.cha{width: 5.64rem;margin-left: .3rem;margin-top: .29rem;}
+.yuyue_button{    width: 2.6rem;
+    height: .68rem;
+    background: #005f1e;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    line-height: .68rem;
+    display: block;
+    border-radius: .1rem;float: left;margin-right: .22rem;}
+.yuyue_button img{width: .38rem;height: .39rem;vertical-align: -12%;display: inline-block;padding-right: .09rem;}
+
+.wuliu{font-size: .28rem;color: #333;padding: 0 .2rem;background: #f2fff2;padding-top: .12rem;padding-bottom: .1rem;}
+.wuliu p{max-height: 9999px;}
+.wuliu div{font-size: .24rem;padding-top: .14rem;max-height: 9999px;}
+.wuliu img{width: .35rem;height: .35rem;display: inline-block;vertical-align: -25%;padding-right: .1rem;}
+.wuliu p img{width: .4rem;height: .2rem;padding: .1rem .1rem;float: right;}
+.wuliu .huo{float: right;}
+.wuliu .huo span{color: #005f1e;}
+
+/*状态*/
+.dan{margin: .18rem 0;background: #fff;}
+.pai{-webkit-transition: all 30s;transition: all 30s;overflow: hidden;}
+.pai_active{height: 0px;}
+.state{font-size: .24rem;color: #808080;padding-top: .3rem;}
+.state  li{position: relative;text-align: center;width: 1.28rem;float: left;}
+.state li b{font-weight: normal;}
+.state  li .down{width: .08rem;height: .07rem;position: absolute;left: .6rem;top: .34rem;}
+.state li .yuan{width: .14rem;height: .14rem;border-radius: 1000px;background: #808080;display: inline-block;text-align: center;}
+.state li span{display: inline-block;background: #808080;width: .8rem;height: .03rem;position: absolute;top: .48rem;left: .84rem;}
+.state li.active b{color: #fff;background: #005f1e;padding: .02rem .16rem;border-radius:1000px ;}
+.state li.active .yuan{background: #005f1e;}
+
+/*派件*/
+
+.paijian{font-size: .24rem;color: #333;padding-top: .4rem;padding-bottom: .18rem;}
+.paijian .left{float: left;width: 1.55rem;text-align: center;padding-top: .04rem;}
+.paijian .left .date{font-size: .2rem;color: #999;}
+.paijian .left .vertical{width: 1px;height: .4rem;background: #ccc;display: inline-block;margin-top: .18rem;}
+.paijian  .right{float: right;width: 4.7rem;font-size: .24rem;}
+.paijian  .right span{color: #005f1e;}

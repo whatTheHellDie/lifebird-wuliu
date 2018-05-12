@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/dingdan_detail.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+	<div class="head">订单详情
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<div class="wrap">
+			<div class="information">
+				<p>订单信息</p>
+				<ul>
+					<li>订单编号：203488895559555</li>
+					<li>下单时间：2016-12-22    14：30</li>
+					<li>订单状态：已完成
+						<!--查看物流变灰色写成class="see grey"-->
+						<a href="wuliu_detail.html" class="see">查看物流</a>
+						
+					</li>
+				</ul>
+			</div>
+			<!--配送信息-->
+			<div class="information">
+				<p>配送信息</p>
+				<ul>
+					<li>联系人：乌托邦小姐</li>
+					<li>联系电话：<div class="phone">15977131285 <br />
+                         0771-256426</div></li>
+					<li>提货地址：<div class="phone">广西南宁市青秀区合作路1号昌泰大厦
+                         14层广西同城小鸟网络有限公司</div></li>
+				</ul>
+			</div>
+				<!--服务信息-->
+				<div class="information">
+				<p>服务信息</p>
+				<ul>
+					<li>货物名称：<div class="phone">橡胶树的大海梦</div></li>
+					<li>数量：20件</li>
+					<li>重量：1.88kg</li>
+					<li>备注：</li>
+					<li>揽件：业务员08888 <div class="time">2016-12-23 12：20</div></li>
+				</ul>
+			</div>
+				</div>	
+	</body>
+	
+</html>

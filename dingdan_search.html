@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/dingdan_search.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+	<div class="head">订单查询
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<div class="wrap">
+			<!--订单查询-->
+			<div class="top clearfix">
+				<div class="dingdan">
+				<p ><span></span>订单号查询<span></span></p>
+				<div class="number"><label for="">订单号</label><textarea name="" id="" placeholder="输入同城小鸟订单号" cols="30" rows="10"></textarea></div>
+				<div class="cha">
+					<a href="dingdan_detail.html" class="yuyue_button">根据运单号查询</a><a href="dingdan_detail.html" class="yuyue_button">根据预约单号查询</a>
+					</div>
+				</div>
+			</div>
+			<!--物流详情-->
+				<div class="dan">
+					<div class="bian">
+			<div class="wuliu clearfix">
+			
+			<p>订单编号：203488895559555 <img src="img/down.png" class="down2" alt=""  /></p>
+			
+			<div style="font-size: .22rem;">
+			下单时间：2016-11-11 12:22:22
+			</div>
+			</div>
+				</div>
+				<!--状态-->
+				<div class="pai">
+				<div class="state">
+				<ul class="clearfix">
+				<li class="active"><b>接单</b><img src="img/green_down.png" class="down" alt="" /><br />
+				<div class="yuan"></div><span></span></li>
+				<li><b>揽件</b><br />
+				<div class="yuan"></div><span></span></li>
+				<li><b>运送中</b><br />
+				<div class="yuan"></div><span></span></li>
+				<li><b>派件中</b><br />
+				<div class="yuan"></div><span></span></li>
+				<li><b>已签收</b><br />
+				<div class="yuan"></div></li>
+				</ul>
+				</div>
+				<div class="paijian">
+				<ul>
+					<li class="clearfix">
+					<div class="left">
+					<div >22:41</div>
+					<div class="date">2016-12-24</div>
+					<div class="vertical"></div>
+					</div>
+					<div class="right">[埌东服务点]派件员：何润东<span>18778974638</span>
+已揽件</div>
+					</li>
+						<li class="clearfix">
+					<div class="left">
+					<div >22:41</div>
+					<div class="date">2016-12-24</div>
+					<div class="vertical"></div>
+					</div>
+					<div class="right">[埌东服务点]派件员：何润东<span>18778974638</span>
+已接单</div>
+					</li>
+						<li class="clearfix">
+					<div class="left">
+					<div >22:41</div>
+					<div class="date">2016-12-24</div>
+					</div>
+					<div class="right">下单成功</div>
+					</li>
+				</ul>
+				</div>
+				</div>
+				</div>
+				
+				</div>	
+				
+				<script type="text/javascript">
+		$(function(){
+			$(".wuliu").click(function(){
+				var $pai=$(this).parent().parent().find("pai")
+				if($pai.hasClass("pai_active")){
+					$pai.removeClass("pai_active");
+				}
+				else{
+					$pai.addClass("pai_active");
+				}
+			})
+		})
+	</script>
+	</body>
+	
+</html>
